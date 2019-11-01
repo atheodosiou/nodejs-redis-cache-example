@@ -14,7 +14,7 @@ const app = express();
 
 //Set response
 function setResponse(username, data) {
-  return `<p>User <strong>${data.login}</strong> has <strong>${data.public_repos}</strong> public repositories...</p>`;
+  return `<p>User <strong>${username}</strong> has <strong>${data.public_repos}</strong> public repositories...</p>`;
 }
 
 //Make request to GitHub for data
